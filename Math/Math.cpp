@@ -33,6 +33,17 @@ int reverse2(int num){
   
 }
 
+//Palindrome Number : If reverse equal to original
+bool isPalindrome(int num) {
+    if(num<0) return false;
+    long rev = 0, temp = num;
+    while(temp){
+        rev = rev*10 + temp%10;
+        temp = temp/10;
+    }
+return rev == num;
+}
+
 int main(){
     
 }
