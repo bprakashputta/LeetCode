@@ -46,6 +46,10 @@ return rev == num;
 
 //Find square root of x 
 // using binary search
+// take l=0, r= n/2 and mid = l + (r-l)/2
+// while l<=r 
+// ==>
+// if mid*mid<=n => l=mid+1, ans=max(ans,mid)
 int mySqrt(int x) {
     if(x==0||x==1) return x;
     int temp = x/2;
